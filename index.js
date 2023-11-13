@@ -9,7 +9,12 @@ window.addEventListener('load', () => {
 	const closePrestamo = document.getElementById('closeModal');
 	const closeRightDialog = document.getElementById('closeRightDialog');
 	const body = document.querySelector('body');
+	const main = document.querySelector('main');
+	const btnHipermercado = document.getElementById('btnHipermercado');
+	const viewHipermercado = document.getElementById('viewHipermercado');
+	const goBack = document.getElementById('goBack');
 	dialogContainer.style.display = 'none';
+	viewHipermercado.style.display= 'none'
 	toggleDialogButton.addEventListener('click', () => {
 		if (dialogContainer.style.display === 'block') {
 			dialogContainer.style.display = 'none';
@@ -61,4 +66,14 @@ window.addEventListener('load', () => {
 			mdPrestamo.style.display = 'block';
 		}
 	});
+	btnHipermercado.addEventListener('click',()=> {
+		main.style.display = 'none'
+		viewHipermercado.classList.remove('viewHipermercado')
+		viewHipermercado.style.display= 'block'
+	})
+	goBack.addEventListener(('click') ,()=> {
+		viewHipermercado.style.display= 'none'
+		main.style.display = 'block'
+	})
+	
 });
