@@ -1,3 +1,4 @@
+
 window.addEventListener('load', () => {
 	const toggleDialogButton = document.getElementById('toggleDialog');
 	const dialogContainer = document.getElementById('dialogContainer');
@@ -15,6 +16,8 @@ window.addEventListener('load', () => {
 	const goBack = document.getElementById('goBack');
 	dialogContainer.style.display = 'none';
 	viewHipermercado.style.display= 'none'
+	rightDialogContainer.style.display = 'none';
+	mdPrestamo.style.display = 'none';
 	toggleDialogButton.addEventListener('click', () => {
 		if (dialogContainer.style.display === 'block') {
 			dialogContainer.style.display = 'none';
@@ -28,7 +31,7 @@ window.addEventListener('load', () => {
 		}
 		return;
 	});
-	rightDialogContainer.style.display = 'none';
+	
 	toggleRightDialogButton.addEventListener('click', () => {
 		if (rightDialogContainer.style.display === 'block') {
 			rightDialogContainer.style.display = 'none';
@@ -46,7 +49,7 @@ window.addEventListener('load', () => {
 			rightDialogContainer.style.display = 'block';
 		}
 	});
-	mdPrestamo.style.display = 'none';
+	
 	btnPrestamo.addEventListener('click', () => {
 		if (mdPrestamo.style.display === 'block') {
 			mdPrestamo.style.display = 'none';
