@@ -37,7 +37,7 @@ window.addEventListener('load', () => {
 			rightDialogContainer.style.display = 'none';
 		} else {
 			body.style.overflow = 'hidden';
-			rightDialogContainer.style.boxShadow = ' 18px 3px 0px 900px rgba(0,0,0,0.75) ';
+			rightDialogContainer.style.boxShadow = ' 18px 3px 0px 5000px rgba(0,0,0,0.75) ';
 			rightDialogContainer.style.display = 'block';
 		}
 	});
@@ -56,7 +56,7 @@ window.addEventListener('load', () => {
 		} else {
 			body.style.overflow = 'hidden';
 
-			mdPrestamo.style.boxShadow = ' 18px 3px 0px 900px rgba(0,0,0,0.75) ';
+			mdPrestamo.style.boxShadow = ' 18px 3px 0px 5000px rgba(0,0,0,0.75) ';
 
 			mdPrestamo.style.display = 'block';
 		}
