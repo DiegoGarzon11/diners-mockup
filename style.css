@@ -195,7 +195,7 @@ footer {
 #alert-dialog {
 	display: none;
 	position: fixed;
-	top: 20%;
+	top: 10%;
 	left: 30%;
 	width:35%;
 	background-color: #fff;
