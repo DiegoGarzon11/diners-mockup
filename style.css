@@ -216,3 +216,16 @@ footer {
 .section_links{
 	height: 550px;
 }
+@media (max-width: 768px) {
+	.imagen_main{
+		width: 150px !important;
+	}
+	.section_info{
+		grid-template-columns: 2fr 2fr;
+	
+	}
+	.items{
+		border : none
+	}
+	
+}

@@ -30,69 +30,72 @@
 			</div>
 			<nav class="d-flex w-100 align-items-center nav_first bg-white">
 				<div>
-					<img
-						style="width: 230px; margin: 0 30px 0 0"
-						src="/images/imagen.png"
-						alt="" />
+					 <img class="imagen_main" style="width: 230px; margin: 0 30px 0 0" src="/images/imagen.png" alt="" />
 				</div>
-				<div class="w-25 d-flex flex-column">
-					<span class="first_text fw-semibold">TU MUNDO</span>
-					<span class="first_text fw-bolder">ONLINE</span>
+		  
+				<div class="w-25 d-none d-sm-flex flex-column">
+					 <span class="first_text fw-semibold">TU MUNDO</span>
+					 <span class="first_text fw-bolder">ONLINE</span>
 				</div>
+		  
 				<div class="input-group mx-4 d-flex">
-					<input
-						class="form-control"
-						list="datalistOptions"
-						id="exampleDataList"
-						placeholder="¿Qué estas buscando?" />
-					<datalist id="datalistOptions">
-						<option value="1. Colgate Crema Dental"></option>
-						<option value="2. Cuidado General"></option>
-						<option value="3. Proteínas"></option>
-						<option value="4. Shampoo"></option>
-						<option value="5. Hidratación Eucerin"></option>
-						<option value="6. Pañales Winny"></option>
-						<option value="7. Toallitas Húmedas Pequeñin"></option>
-						<option value="8. Splenda Sucralosa Tabletas"></option>
-					</datalist>
-
-					<button
-						class="input-group-text"
-						id="addon-wrapping">
-						<img
-							src="/images/lupa.svg"
-							alt="" />
-					</button>
+					
+					 <input
+						  class="form-control d-md-block d-none"
+						  list="datalistOptions"
+						  id="exampleDataList"
+						  placeholder="¿Qué estás buscando?"
+					 />
+					 <datalist id="datalistOptions">
+						  <option value="1. Colgate Crema Dental"></option>
+						  <option value="2. Cuidado General"></option>
+						  <option value="3. Proteínas"></option>
+						  <option value="4. Shampoo"></option>
+						  <option value="5. Hidratación Eucerin"></option>
+						  <option value="6. Pañales Winny"></option>
+						  <option value="7. Toallitas Húmedas Pequeñin"></option>
+						  <option value="8. Splenda Sucralosa Tabletas"></option>
+					 </datalist>
+		  
+					 <button class="input-group-text d-none" id="addon-wrapping">
+						  <img src="/images/lupa.svg" alt="" />
+					 </button>
 				</div>
-				<div class="d-flex justify-content-around align-items-start botones_nav">
-					<button class="btn d-flex flex-column align-items-center">
-						<img
-							src="/images/lista.svg"
-							alt="" />
-						<span class="text-primary">Mis Listas</span>
-					</button>
-					<button class="btn d-flex flex-column align-items-center">
-						<img
-							src="/images/bag.svg"
-							alt="" />
-						<span class="text-primary">Mis Pedidos</span>
-					</button>
-					<button class="btn d-flex flex-column align-items-center">
-						<img
-							src="/images/profile.svg"
-							alt="" />
-						<span class="text-primary">Mi Cuenta</span>
-					</button>
-					<button
-						id="toggleRightDialog"
-						class="btn d-flex flex-column align-items-center">
-						<img
-							src="/images/shop.svg"
-							alt="" />
-						<span class="text-primary">Carrito</span>
-					</button>
+		  
+				<div class="d-none d-md-flex justify-content-around align-items-start botones_nav">
+					 <button class="btn d-flex flex-column align-items-center ">
+						  <img src="/images/lista.svg" alt="" />
+						  <span class="text-primary">Mis Listas</span>
+					 </button>
+					 <button class="btn d-flex flex-column align-items-center">
+						  <img src="/images/bag.svg" alt="" />
+						  <span class="text-primary">Mis Pedidos</span>
+					 </button>
+					 <button class="btn d-flex flex-column align-items-center">
+						  <img src="/images/profile.svg" alt="" />
+						  <span class="text-primary">Mi Cuenta</span>
+					 </button>
+					 <button id="toggleRightDialog" class="btn d-flex flex-column align-items-center">
+						  <img src="/images/shop.svg" alt="" />
+						  <span class="text-primary">Carrito</span>
+					 </button>
 				</div>
-			</nav>
+		  
+				<!-- Input adicional para dispositivos md y más pequeños -->
+				
+				<div class="d-md-none d-flex justify-content-around align-items-start botones_nav">
+					 <button class="btn d-flex flex-column align-items-center">
+						  <img src="/images/profile.svg" alt="" />
+						  <span class="text-primary">Mi Cuenta</span>
+					 </button>
+					 <button id="toggleRightDialogMobile" class="btn d-flex flex-column align-items-center">
+						  <img src="/images/shop.svg" alt="" />
+						  <span class="text-primary">Carrito</span>
+					 </button>
+				</div>
+		  </nav>
+		  
+		  
 			<nav class="d-flex justify-content-center gap-5 nav_second align-content-center ">
 				<p
 					id="toggleDialog"
@@ -101,14 +104,40 @@
 						id="toggleDialogIcon"
 						width="10"
 						src="/images/menu.svg"
-						alt="" />CATEGORIAS
+						alt="" />
+						<span class="d-none d-md-block">CATEGORIAS</span>
 				</p>
-				<p class="m-0">TIENDAS OFICIALES</p>
-				<p class="m-0">DINERS TRAVEL</p>
-				<p class="m-0">FAIR FASHION</p>
-				<p class="m-0">MODO PERÚ</p>
-				<p class="m-0">FOOD EXPRESS</p>
-				<p class="m-0">TU SUPER MARKET</p>
+				<p class="m-0 d-none d-md-block">TIENDAS OFICIALES</p>
+				<p class="m-0 d-none d-md-block">DINERS TRAVEL</p>
+				<p class="m-0 d-none d-md-block">FAIR FASHION</p>
+				<p class="m-0 d-none d-md-block">MODO PERÚ</p>
+				<p class="m-0 d-none d-md-block">FOOD EXPRESS</p>
+				<p class="m-0 d-none d-md-block">TU SUPER MARKET</p>
+
+
+				<div class="d-md-none  input-group mx-4 d-sm-flex ">
+					<input
+						 class="form-control d-block"
+						 list="datalistOptionsMobile"
+						 id="exampleDataListMobile"
+						 placeholder="¿Qué estás buscando?"
+					/>
+					<datalist id="datalistOptionsMobile">
+						 <option value="1. Colgate Crema Dental"></option>
+						 <option value="2. Cuidado General"></option>
+						 <option value="3. Proteínas"></option>
+						 <option value="4. Shampoo"></option>
+						 <option value="5. Hidratación Eucerin"></option>
+						 <option value="6. Pañales Winny"></option>
+						 <option value="7. Toallitas Húmedas Pequeñin"></option>
+						 <option value="8. Splenda Sucralosa Tabletas"></option>
+					</datalist>
+		 
+					<button class="input-group-text" id="addon-wrapping-mobile">
+						 <img src="/images/lupa.svg" alt="" />
+					</button>
+			  </div>
+		 
 			</nav>
 		</header>
 		<main>
@@ -442,14 +471,14 @@
 				</section>
 			</section>
 
-			<section class="d-flex gap-3 justify-content-evenly mb-3 mx-3">
+			<section class="d-grid d-md-flex gap-3 justify-content-evenly mb-3 mx-3 section_info">
 				<div class="d-flex align-items-center justify-content-center gap-3 border-end border-secondary-subtle items">
 					<div class="d-flex align-items-center justify-content-center">
 						<img
 							style="width: 40px"
 							src="images/globe.svg"
 							alt="" />
-						<div class="d-flex flex-column lh-1">
+						<div class="d-md-flex flex-column lh-1 d-none">
 							<span class="fw-bold fs-5 first_text">MODO</span>
 							<span class="fw-bold fs-5 second_text">SOSTENIBLE</span>
 						</div>
